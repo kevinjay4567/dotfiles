@@ -24,8 +24,8 @@ return {
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,
-				theme = "auto",
-				component_separators = { left = "", right = "" },
+				theme = "seoul256",
+				component_separators = { left = "|", right = "|" },
 				section_separators = { left = "", right = "" },
 				disabled_filetypes = {
 					statusline = {},
@@ -42,11 +42,11 @@ return {
 			},
 			sections = {
 				lualine_a = { "mode" },
-				lualine_b = { "branch", "diff", "diagnostics" },
+				lualine_b = { "branch" },
 				lualine_c = { "filename" },
-				lualine_x = { "encoding", "fileformat", "filetype" },
-				lualine_y = { "progress" },
-				lualine_z = { "location", timeIs },
+				lualine_x = { "filetype" },
+				lualine_y = { "location" },
+				lualine_z = { timeIs },
 			},
 			inactive_sections = {
 				lualine_a = {},
