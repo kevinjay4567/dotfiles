@@ -4,7 +4,7 @@
 - Zsh -> [ [zinit](https://github.com/zdharma-continuum/zinit), [starship](https://github.com/starship/starship) ]
 - LazyGit
 
-### TODO
+## TODO
 
-[ ] Configurar entorno JAVA para neovim
-[ ] Empezar con la configuracion de Zellij
+- [ ] Configurar entorno JAVA para neovim
+- [ ] Empezar con la configuracion de Zellij
