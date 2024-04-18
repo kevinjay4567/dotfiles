@@ -1,3 +1,4 @@
+
 return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
@@ -13,6 +14,7 @@ return {
 		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
 
+		lspconfig.jdtls.setup({})
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -99,11 +101,6 @@ return {
 
 		-- configure css server
 		lspconfig["cssls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		lspconfig["intelephense"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
