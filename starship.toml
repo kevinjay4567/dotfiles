@@ -1,20 +1,23 @@
-# Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """
-$directory\
-$lua\
-$character
-"""
+format = '$directory$os$character'
 
-right_format = "$git_branch"
+add_newline = true
 
-[character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
-error_symbol = '[➜](bold red)'
+[character]
+success_symbol = '[➜](bold green)'
 
-[lua]
-symbol = "󰢱 "
+[username]
+disabled = false
+show_always = true
 
 [package]
 disabled = true
+
+[os]
+format = "[($symbol)]($style)"
+style = "bold red"
+disabled = false
+
+[shell]
+disabled = false
