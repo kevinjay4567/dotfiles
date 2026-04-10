@@ -8,6 +8,7 @@ vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.softtabstop = 2
 vim.o.expandtab = true
+vim.o.clipboard = "unnamedplus"
 
 map.set('n', '<C-h>', '<C-w>h')
 map.set("n", "<C-l>", "<C-w>l", nil)
