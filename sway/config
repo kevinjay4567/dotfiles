@@ -30,6 +30,7 @@ include /etc/sway/config-vars.d/*
 # package `sway-backgrounds`. Installing this package drops a config file to
 # /etc/sway/config.d/
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/kevin/Imágenes/wallpapers/debian_wallpaper.jpg center
 #
 # Example configuration:
 #
